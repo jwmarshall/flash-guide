@@ -24,7 +24,7 @@ interface CalculationResult {
 const ISO_PRESETS = [50, 100, 200, 400, 800, 1600]
 const POWER_RATIOS = [1, 2, 4, 8, 16, 32, 64, 128]
 
-export default function FlashlyApp() {
+export default function FlashGuideApp() {
   const [guideNumber, setGuideNumber] = useState<string>('32')
   const [isoValues, setIsoValues] = useState<string>('100,200,400,800')
   const [units, setUnits] = useState<'meters' | 'feet'>('meters')
@@ -154,7 +154,7 @@ export default function FlashlyApp() {
         <div className="text-center mb-8 no-print">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Camera className="h-8 w-8 text-blue-400" />
-            <h1 className="text-4xl font-bold text-white">Flashly</h1>
+            <h1 className="text-4xl font-bold text-white">Flash Guide</h1>
             <Zap className="h-8 w-8 text-yellow-400" />
           </div>
           <p className="text-gray-400 text-lg no-print">

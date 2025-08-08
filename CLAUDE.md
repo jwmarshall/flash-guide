@@ -25,7 +25,7 @@ This project uses pnpm. Install dependencies with `pnpm install`.
 
 ### Application Structure
 
-**Flashly** is a flash exposure calculator for film photographers that calculates flash distances based on guide numbers and camera settings.
+**Flash Guide** is a flash exposure calculator for film photographers that calculates flash distances based on guide numbers and camera settings.
 
 #### Core Features
 1. **ISO-based calculations**: Calculate flash distances for multiple ISO values at various f-stops

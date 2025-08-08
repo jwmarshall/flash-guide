@@ -5,7 +5,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Flashly - Flash Exposure Calculator',
+  title: 'Flash Guide - Flash Exposure Calculator',
   description: 'Calculate flash exposure distances for film photography using guide numbers, ISO, and aperture settings.',
   keywords: 'flash, photography, film, exposure, calculator, guide number',
   viewport: 'width=device-width, initial-scale=1',

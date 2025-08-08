@@ -1,4 +1,4 @@
-# Flashly
+# Flash Guide
 
 A flash exposure calculator for film photographers. Calculate optimal flash distances based on guide numbers, ISO values, and aperture settings.
 
@@ -33,8 +33,8 @@ A flash exposure calculator for film photographers. Calculate optimal flash dist
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/flashly.git
-cd flashly
+git clone https://github.com/yourusername/flash-guide.git
+cd flash-guide
 
 # Install dependencies
 pnpm install
@@ -54,7 +54,7 @@ pnpm run start
 
 ## How It Works
 
-Flashly uses the standard flash guide number formula to calculate optimal distances:
+Flash Guide uses the standard flash guide number formula to calculate optimal distances:
 
 - **Base Formula**: `Distance = Guide Number / F-stop`
 - **ISO Adjustment**: `Adjusted GN = GN × √(ISO/100)`
@@ -91,7 +91,7 @@ The results show the maximum effective flash distance for proper exposure at eac
 ## Project Structure
 
 ```
-flashly/
+flash-guide/
 ├── app/
 │   ├── api/
 │   │   ├── iso/         # ISO-based calculations
