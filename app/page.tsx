@@ -151,20 +151,20 @@ export default function FlashlyApp() {
     <div className="min-h-screen bg-gray-950 text-gray-100">
       <div className="container mx-auto px-4 py-8 max-w-6xl">
         {/* Header */}
-        <div className="text-center mb-8">
+        <div className="text-center mb-8 no-print">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Camera className="h-8 w-8 text-blue-400" />
             <h1 className="text-4xl font-bold text-white">Flashly</h1>
             <Zap className="h-8 w-8 text-yellow-400" />
           </div>
-          <p className="text-gray-400 text-lg">
+          <p className="text-gray-400 text-lg no-print">
             Flash exposure calculator for film photographers
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto space-y-8">
           {/* Input Form */}
-          <Card className="bg-gray-900 border-gray-800">
+          <Card className="bg-gray-900 border-gray-800 no-print">
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-white">
                 <Calculator className="h-5 w-5" />

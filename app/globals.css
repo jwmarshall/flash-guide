@@ -50,6 +50,10 @@
     display: none !important;
   }
   
+  .bg-gray-900.border-gray-800 {
+    @apply mb-4;
+  }
+  
   table {
     @apply border-collapse;
   }

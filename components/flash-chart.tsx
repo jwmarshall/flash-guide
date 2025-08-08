@@ -44,26 +44,26 @@ export function FlashChart({ result }: FlashChartProps) {
         </CardTitle>
       </CardHeader>
       <CardContent>
-        <ChartContainer config={chartConfig} className="h-[400px]">
+        <ChartContainer config={chartConfig} className="h-[400px] w-full">
           <ResponsiveContainer width="100%" height="100%">
             <LineChart data={chartData} margin={{ top: 20, right: 30, left: 20, bottom: 20 }}>
               <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
-              <XAxis 
-                dataKey="fstop" 
+              <XAxis
+                dataKey="fstop"
                 stroke="#9ca3af"
                 fontSize={12}
               />
-              <YAxis 
+              <YAxis
                 stroke="#9ca3af"
                 fontSize={12}
-                label={{ 
-                  value: `Distance (${result.units})`, 
-                  angle: -90, 
+                label={{
+                  value: `Distance (${result.units})`,
+                  angle: -90,
                   position: 'insideLeft',
                   style: { textAnchor: 'middle', fill: '#9ca3af' }
                 }}
               />
-              <ChartTooltip 
+              <ChartTooltip
                 content={<ChartTooltipContent />}
                 contentStyle={{
                   backgroundColor: '#1f2937',
@@ -72,7 +72,7 @@ export function FlashChart({ result }: FlashChartProps) {
                   color: '#f9fafb'
                 }}
               />
-              <Legend 
+              <Legend
                 wrapperStyle={{ color: '#9ca3af' }}
               />
               {result.rowHeaders.map((rowHeader, index) => {
@@ -93,7 +93,7 @@ export function FlashChart({ result }: FlashChartProps) {
           </ResponsiveContainer>
         </ChartContainer>
         <p className="text-sm text-gray-400 mt-4">
-          Each line represents a different {result.mode === 'iso' ? 'ISO value' : 'power ratio'}. 
+          Each line represents a different {result.mode === 'iso' ? 'ISO value' : 'power ratio'}.
           Lower f-stops require closer flash distances.
         </p>
       </CardContent>

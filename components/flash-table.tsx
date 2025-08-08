@@ -18,11 +18,11 @@ export function FlashTable({ result }: FlashTableProps) {
   const handleCopy = () => {
     let tableText = `Flash Distance Table (${result.units})\n\n`
     tableText += `\t${result.columnHeaders.map(h => `f/${h}`).join('\t')}\n`
-    
+
     result.rowHeaders.forEach((rowHeader, i) => {
       tableText += `${rowHeader}\t${result.data[i].map(d => d.toFixed(1)).join('\t')}\n`
     })
-    
+
     navigator.clipboard.writeText(tableText)
   }
 
@@ -42,7 +42,7 @@ export function FlashTable({ result }: FlashTableProps) {
               variant="outline"
               size="sm"
               onClick={handleCopy}
-              className="border-gray-700 text-gray-300 hover:bg-gray-800"
+              className="border-gray-700 text-gray-300 hover:bg-gray-800 no-print"
             >
               <Copy className="h-4 w-4" />
             </Button>
@@ -50,7 +50,7 @@ export function FlashTable({ result }: FlashTableProps) {
               variant="outline"
               size="sm"
               onClick={handlePrint}
-              className="border-gray-700 text-gray-300 hover:bg-gray-800"
+              className="border-gray-700 text-gray-300 hover:bg-gray-800 no-print"
             >
               <Printer className="h-4 w-4" />
             </Button>
